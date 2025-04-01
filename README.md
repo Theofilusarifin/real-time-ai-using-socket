@@ -37,7 +37,8 @@ This application enables real-time communication between multiple clients and a 
 
 ## Configuration
 
-Create a `.env` file in the project root with the following content:```env
+Create a `.env` file in the project root with the following content:
+```env
 # Server settings
 APP_HOST=0.0.0.0
 APP_PORT=5000
