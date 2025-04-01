@@ -76,10 +76,10 @@ async def main():
     """Main function to run the client."""
     session = PromptSession()
     username = await session.prompt_async("Enter your username: ")
-    
-    # Use APP_HOST and APP_PORT from .env file
+
     app_host = os.getenv("APP_HOST", "localhost")
     app_port = os.getenv("APP_PORT", "5000")
+
     await sio.connect(f"http://{app_host}:{app_port}", auth={"username": username})
     run_in_terminal(lambda: print(f"\nYou are now logged in as: {username}"))
 
