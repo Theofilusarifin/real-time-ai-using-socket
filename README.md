@@ -1,5 +1,7 @@
 # Real-time AI Application Using Socket
 
+![Demo Video](./assets/demo.gif)
+
 This application enables real-time communication between multiple clients and a server using Socket.IO. It supports live chat and streams AI responses from Google Generative AI (Gemini) on demand.
 
 ## Key Features
@@ -35,9 +37,7 @@ This application enables real-time communication between multiple clients and a 
 
 ## Configuration
 
-Create a `.env` file in the project root with the following content:
-
-```env
+Create a `.env` file in the project root with the following content:```env
 # Server settings
 APP_HOST=0.0.0.0
 APP_PORT=5000
@@ -72,3 +72,4 @@ Replace `your_google_api_key_here` with your actual API key.
 ### Running Multiple Clients
 
 Open additional terminal tabs and run the client command in each to simulate multi-user communication.
+
