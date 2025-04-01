@@ -91,21 +91,12 @@ async def chat_message(sid, data):
 
 
 @sio.event
-async def save_note(sid, data):
-    """Handles the save_note event."""
-    note = data.get("note")
-    print(f"[{sid}] saved note: {note}")
-    return {"status": "success", "length": len(note)}
-
-
-@sio.event
 def disconnect(sid):
     """Handles the disconnect event."""
     print(f"[{sid}] : Disconnected")
 
 
 if __name__ == "__main__":
-    # Run the app using APP_HOST and APP_PORT from .env
     web.run_app(
         app,
         host=os.getenv("APP_HOST", "0.0.0.0"),
